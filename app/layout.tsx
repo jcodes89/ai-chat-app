@@ -16,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50 h-screen w-auto`}>{children}</body>
+      <head>
+      <script src="https://kit.fontawesome.com/5c59429581.js" defer crossOrigin="anonymous"></script>
+
+      </head>
+      <body className={`${inter.className}  h-screen w-auto`}>{children}</body>
     </html>
   );
 }
