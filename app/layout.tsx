@@ -23,16 +23,16 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} `}>
         <Nav/>
-        <div className="flex justify-center mt-3">
-          <audio controls autoPlay loop controlsList="nodownload noremoteplayback" className="scale-75">
-            <source src="/Audio/the-enchantress-dark-celtic-background-music-114207.mp3" type="audio/mp3"/>
-            Your browser does not support the audio element.
-          </audio>
-        </div>
         <div className="">
           {children}
         </div>
         
+        <div className="flex justify-center mt-3">
+          <audio controls autoPlay loop controlsList="nodownload noremoteplayback" className="scale-90">
+            <source src="/Audio/the-enchantress-dark-celtic-background-music-114207.mp3" type="audio/mp3"/>
+            Your browser does not support the audio element.
+          </audio>
+        </div>
         
       </body>
     </html>
