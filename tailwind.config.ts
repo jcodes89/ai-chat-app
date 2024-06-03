@@ -9,6 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        "hero-background": "url('/Images/background-castle.webp')",
+        
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -18,5 +20,15 @@ const config: Config = {
   plugins: [
     require('daisyui'),
   ],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          'primary': '#0F2C4B',
+          'secondary': '#F7913A'
+        }
+      }
+    ]
+  }
 };
 export default config;

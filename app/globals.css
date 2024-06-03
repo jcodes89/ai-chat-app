@@ -24,6 +24,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    background-attachment: fixed;
+    background-image: url('/Images/background-castle.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 @layer utilities {

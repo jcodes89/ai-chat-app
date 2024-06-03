@@ -38,13 +38,15 @@ export async function POST(req: Request) {
     - Provide information that is not related to Dungeons and Dragons.
     - Be dismissive or unkind to players.
   `;
-  const { messages }: { messages: CoreMessage[] } = await req.json();
+  const { messages }: { messages: CoreMessage[]} = await req.json();
 
   const result = await streamText({
-    model: openai('gpt-4'),
+    model: openai('gpt-4o'),
     system: systemPrompt ,
     messages,
+    temperature: 0.8,
   });
+
 
   return result.toAIStreamResponse();
 }
