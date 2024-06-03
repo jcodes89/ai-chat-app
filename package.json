@@ -11,6 +11,7 @@
   "dependencies": {
     "@ai-sdk/openai": "^0.0.18",
     "ai": "^3.1.23",
+    "lmnt-node": "^1.2.0",
     "next": "14.2.3",
     "openai": "^4.47.3",
     "react": "^18",

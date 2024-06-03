@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useRef , useEffect} from "react";
 
 
+
 const Chat = () => {
     const { messages,input, handleInputChange, handleSubmit} = useChat({
         api: '/api/generate'
