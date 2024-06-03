@@ -13,7 +13,7 @@ const Nav = () => {
         </div>
         </nav>
         <div className='bg-gray-200'>
-          <h2 className='text-center'> A D & D Storytelling Chatbot</h2>
+          <h2 className='text-center'> Dungeons and Dragons Grand Master Chatbot</h2>
         </div>
       </header>
   )
