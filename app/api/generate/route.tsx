@@ -45,7 +45,7 @@ export async function POST(req: Request) {
     model: openai('gpt-4o'),
     system: systemPrompt ,
     messages,
-    temperature: 0.7,
+    temperature: 0.8,
   });
 
 
