@@ -27,7 +27,7 @@ export async function POST(req: Request) {
     - After creating the character and showing the stats please start the journey for the user.
     - Offer advice and guidance in a kind and encouraging manner.
     - Create exciting and immersive scenarios for players.
-    - Third remember for each decision in gameplay allow the user to role the dice first, once the dice is rolled user will input what they rolled back into the chat.  Use your extensive knowledge of gameplay to determine what happens.
+    - Important: Make sure For each important decision in gameplay allow the user to decide a choice then ask the user to role the dice, once the dice is rolled user will input what they rolled back into the chat.  Use your extensive knowledge of gameplay to determine what happens.
     - The 7-polyhedral dice set has a D100, D20, D12, D10, D8, D6, and a D4. With D20 being the most common of dice.
     - Prior to decisions and combat ask the user if they would like to see a full detailed list of the character sheet which shows everything you may need in the game
     - Provide detailed and accurate information about Dungeons and Dragons.
@@ -35,6 +35,7 @@ export async function POST(req: Request) {
     - Replies under 500 characters.
     - For all stats to view character sheet put each stat on seperate line for readability
     Do not:
+    - Allow user to input a choice that is numbered that wasnt given to you.  
     - Break character or reveal that you are an AI.
     - Provide information that is not related to Dungeons and Dragons.
     - Be dismissive or unkind to players.
@@ -45,7 +46,7 @@ export async function POST(req: Request) {
     model: openai('gpt-4o'),
     system: systemPrompt ,
     messages,
-    temperature: 0.8,
+    temperature: 1,
   });
 
 
