@@ -34,3 +34,6 @@ Welcome to AI Dungeon Master, a cutting-edge chatbot designed to elevate your Du
 ### Contact
 - **For inquiries or feedback, please contact jeremydev89@gmail.com**
 
+
+*AI Dungeon Master is not affiliated with Wizards of the Coast or Dungeons & Dragons. Dungeons & Dragons is a registered trademark of Wizards of the Coast.*
+
